@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Greeter settings
+Categories=GNOME;GTK;Settings;DesktopSettings;
+Keywords=Configuration;Utility;
+Exec=lightdm-gtk-greeter-settings-pkexec
+Icon=lightdm-gtk-greeter-settings
+Terminal=false
+Type=Application

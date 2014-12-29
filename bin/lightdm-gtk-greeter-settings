@@ -1,0 +1,33 @@
+#!/usr/bin/env python
+# -*- Mode: Python; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
+#   LightDM GTK Greeter Settings
+#   Copyright (C) 2014 Andrew P. <pan.pav.7c5@gmail.com>, Matko Jun <matko.jun@gmail.com>
+#
+#   This program is free software: you can redistribute it and/or modify it
+#   under the terms of the GNU General Public License version 3, as published
+#   by the Free Software Foundation.
+#
+#   This program is distributed in the hope that it will be useful, but
+#   WITHOUT ANY WARRANTY; without even the implied warranties of
+#   MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR
+#   PURPOSE.  See the GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License along
+#   with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+import sys
+import os
+
+import gi
+gi.require_version('Gtk', '3.0')
+
+
+project_dir = os.path.abspath(
+    os.path.dirname(os.path.dirname(os.path.realpath(sys.argv[0]))))
+if (os.path.exists(os.path.join(project_dir, 'lightdm_gtk_greeter_settings'))
+        and project_dir not in sys.path):
+    sys.path.insert(0, project_dir)
+
+
+import lightdm_gtk_greeter_settings
+lightdm_gtk_greeter_settings.main()
