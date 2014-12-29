@@ -21,21 +21,25 @@ Prerequisites
 Installation
 ------------
 In project root run (as root):
+```
     python setup.py install
-    
+```
+
 Optionally, if gtk icon cache update fails, run (as root):
+```
     gtk-update-icon-cache /usr/share/icons/hicolor
+```
 
 Authors
 -------
-Matko Jun <matko.jun@gmail.com> EL7 port
-Andrew P. <pan.pav.7c5@gmail.com> original project
+[Matko Jun](matko.jun@gmail.com) - EL7 port  
+[Andrew P.](pan.pav.7c5@gmail.com) - original project  
 
 References
 ----------
-[EL7 port page] (https://github.com/mjun/lightdm-gtk-greeter-settings)
-[Original project page] (https://launchpad.net/lightdm-gtk-greeter-settings)
-[Original project description] (http://www.webupd8.org/2014/10/lightdm-gtk-greeter-settings-gui.html)
+[EL7 port page] (https://github.com/mjun/lightdm-gtk-greeter-settings)  
+[Original project page] (https://launchpad.net/lightdm-gtk-greeter-settings)  
+[Original project description] (http://www.webupd8.org/2014/10/lightdm-gtk-greeter-settings-gui.html)  
 
 License
 -------
